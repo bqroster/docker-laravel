@@ -17,3 +17,9 @@ It uses below configurations
 
 - Stops Docker compose
 
+
+### Start Storybook
+
+`npm run storybook`
+
+Storybook will open by default in `http://localhost:6080`

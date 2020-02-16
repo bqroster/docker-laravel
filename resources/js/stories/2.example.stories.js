@@ -6,7 +6,8 @@ import { withKnobs, text } from '@storybook/addon-knobs';
 import Example from '../components/ExampleComponent';
 
 storiesOf('All Intermediate Examples', module)
-    .addDecorator(withInfo, withKnobs)
+    .addDecorator(withInfo)
+    .addDecorator(withKnobs)
     .add(
         'Example Two',
         () => ({

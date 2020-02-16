@@ -5,7 +5,7 @@
         "docker:init": "bash .docker/scripts/init.sh",
         "docker:stop": "bash .docker/scripts/stop.sh",
         "docker:migrate": "docker-compose exec app php artisan migrate",
-        "storybook": "start-storybook",
+        "storybook": "start-storybook -p 6080",
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "npm run development -- --watch",
