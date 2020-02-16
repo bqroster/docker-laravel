@@ -1,5 +1,4 @@
 /.idea
-/.docker/mysql/.data/db/*
 /node_modules
 /public/hot
 /public/storage
