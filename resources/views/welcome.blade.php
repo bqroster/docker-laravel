@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Laravel es la onda</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -64,7 +64,8 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div id="vue-app" class="flex-center position-ref full-height">
+            <example-component></example-component>
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -81,12 +82,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel {{ isset($msg) ? $msg : 'sehr gut' }}
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://laravel.com/docs">@lang('menu.option1')</a>
+                    <a href="https://laracasts.com">@lang('menu.option2')</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://blog.laravel.com">Blog</a>
                     <a href="https://nova.laravel.com">Nova</a>
@@ -96,5 +97,8 @@
                 </div>
             </div>
         </div>
+
+        <script src="{{ mix('js/app.js') }}"></script>
+
     </body>
 </html>
