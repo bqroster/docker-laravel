@@ -2,4 +2,4 @@
 echo -e "${green}Docker Compose UP...${reset}";
 docker-compose up -d
 
-echo -e "${green}Webserver started at http://localhost:${WEBSERVER_PORT:-84}";
+echo -e "${green}Webserver started at http://localhost:${WEBSERVER_PORT:-84}${reset}";
